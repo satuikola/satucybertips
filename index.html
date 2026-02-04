@@ -1,1 +1,139 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Satun Kybervinkit | Satu Cyber Tips</title>
+  <meta name="description" content="Satun Kybervinkit | Satu Cyber Tips. LinkedIn-julkaisujen arkisto ja kybervinkit arkeen." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="wrap header">
+    <div class="brand">
+      <div class="logo">S</div>
+      <div>
+        <div class="brand-title">Satun Kybervinkit</div>
+        <div class="brand-sub">Satu Cyber Tips</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#vinkit">Vinkit</a>
+      <a href="#tammikuu">Tammikuu 2026</a>
+      <a href="#minusta">Minusta</a>
+      <a href="#yhteys">Yhteys</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <h1>Kybervinkit, jotka sopii tavalliseen arkeen.</h1>
+        <p class="lead">
+          Selkeästi ja käytännönläheisesti. Ei turhaa vaikeaa kieltä.
+          Mukana välillä myös SOC-tyylinen “mitä tästä pitäisi huomata” -kulma.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn" href="#vinkit">Selaa vinkkejä</a>
+          <a class="btn ghost" href="#tammikuu">Katso tammikuu 2026</a>
+        </div>
+
+        <div class="chips">
+          <span class="chip">Huijaukset</span>
+          <span class="chip">Phishing</span>
+          <span class="chip">MFA</span>
+          <span class="chip">Wi-Fi</span>
+          <span class="chip">Social engineering</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-title">Mitä täällä on</div>
+        <p class="muted">
+          Tämä sivu toimii LinkedIn-julkaisujen arkistona ja “vinkkipankkina”.
+          Jokainen kortti linkkaa alkuperäiseen postaukseen.
+        </p>
+        <div class="rule">
+          <div class="rule-title">Nyrkkisääntö</div>
+          <div class="rule-text">Jos viesti kiirehtii sinua, pysähdy ja tarkista itse ilman linkkiä.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vinkit" class="section">
+      <div class="section-head">
+        <h2>Vinkit</h2>
+        <p class="muted">Hae, filtteröi tageilla ja avaa postaukset LinkedInissä.</p>
+      </div>
+
+      <div class="controls">
+        <input id="search" class="input" type="search" placeholder="Hae (esim. kiire, auktoriteetti, QR)" />
+        <div id="tagButtons" class="tag-row" aria-label="Tagifiltterit"></div>
+      </div>
+
+      <div id="posts" class="grid" aria-live="polite"></div>
+    </section>
+
+    <section id="tammikuu" class="section">
+      <div class="section-head">
+        <h2>Tammikuu 2026</h2>
+        <p class="muted">Kooste tammikuun julkaisuista.</p>
+      </div>
+      <div id="january" class="grid"></div>
+    </section>
+
+    <section id="minusta" class="section">
+      <div class="section-head">
+        <h2>Minusta</h2>
+      </div>
+
+      <div class="about">
+        <div class="card">
+          <h3>Satu</h3>
+          <p class="muted">
+            SOC-opiskelija ja käytännönläheinen kyberturva-sisällöntuottaja.
+            Taustalla vahva asiakaspalvelu ja tikettityö.
+          </p>
+          <ul class="list">
+            <li>Arjen kyberturva ja huijausten tunnistaminen</li>
+            <li>IT-tuen perusvianmääritys ja päätelaitteet</li>
+            <li>Kevyt SOC-näkökulma: mitä tarkistan ensin</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Miksi tein tämän</h3>
+          <p class="muted">
+            Haluan, että vinkit löytyy yhdestä paikasta ja niitä voi selata aiheittain.
+            Myöhemmin tänne voi lisätä myös projektit (Genially, GitHub, CV).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="yhteys" class="section">
+      <div class="section-head">
+        <h2>Yhteys</h2>
+        <p class="muted">Päivitä omat linkit alle.</p>
+      </div>
+
+      <div class="card">
+        <div class="links">
+          <a class="link" href="https://www.linkedin.com/in/satuikola/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="link" href="https://github.com/satuikola" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="link" href="mailto:sinun.sahkoposti@esimerkki.fi">Sähköposti</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span class="muted">© <span id="year"></span> Satun Kybervinkit</span>
+    </footer>
+  </main>
+
+  <script src="posts.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
 
