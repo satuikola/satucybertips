@@ -245,6 +245,8 @@ const POSTS = [
   }
 ];
 
-export default POSTS;
+const POSTS = [
+  // ...
+];
 
 
