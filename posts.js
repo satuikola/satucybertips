@@ -245,8 +245,4 @@ const POSTS = [
   }
 ];
 
-const POSTS = [
-  // ...
-];
-
 
