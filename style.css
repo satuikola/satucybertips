@@ -193,4 +193,12 @@ h3{ margin: 0 0 10px; font-size: 18px; }
   .grid{ grid-template-columns: 1fr; }
   .nav{ display:none; }
 }
+html {
+  scroll-padding-top: 90px;
+}
+
+.section {
+  scroll-margin-top: 90px;
+}
+
 
