@@ -76,3 +76,12 @@
   .postGrid{ grid-template-columns: 1fr; }
   .input, .select{ min-width: 100%; }
 }
+
+/* Aktiivinen linkki navissa */
+.nav a.is-active{
+  color: var(--text);
+  border: 1px solid var(--stroke);
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #0a0f2acc;
+}
