@@ -151,7 +151,7 @@ const POSTS = [
     category: "Identiteetti",
     tags: ["mfa", "koodit", "tiliturva"],
     excerpt: "MFA suojaa vain jos koodi pysyy sinulla, ei koskaan eteenpain.",
-    content: `
+content: `
 MFA on paras perussuojasi, mutta se toimii vain yhdellä ehdolla: koodi pysyy sinulla.
 
 Huijari ei yleensä yritä murtaa MFA:ta teknisesti. Se yrittää saada sinut itse antamaan koodin, hyväksymään pyynnön tai kirjautumaan feikkisivulle.
