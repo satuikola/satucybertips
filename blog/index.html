@@ -1,1 +1,53 @@
 
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kirjoitukset | SatuCyberTips</title>
+  <meta name="description" content="Kirjoitukset ja tarkistuslistat aiheittain. MFA, huijaukset, varmuuskopiot, päivitykset ja arjen tietoturva." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="blog.css" />
+</head>
+
+<body>
+  <header class="top">
+    <div class="wrap top__inner">
+      <a class="brand" href="../index.html">SatuCyberTips</a>
+      <nav class="nav">
+        <a href="../index.html#about">Minusta</a>
+        <a href="../index.html#projects">Projektit</a>
+        <a href="../index.html#faq">FAQ</a>
+        <a class="btn btn--ghost" href="../index.html#contact">Yhteys</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Kirjoitukset</h2>
+          <p>Tekstit aiheittain. Näitä voi lukea ilman LinkedIniä. Voit etsiä ja suodattaa kategorian mukaan.</p>
+        </div>
+
+        <div class="filters">
+          <input id="q" class="input" type="search" placeholder="Hae otsikosta, tageista tai sisällöstä" />
+          <select id="cat" class="select">
+            <option value="">Kaikki kategoriat</option>
+          </select>
+        </div>
+
+        <div id="postList" class="postGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../posts.js"></script>
+  <script src="blog.js"></script>
+</body>
+</html>
