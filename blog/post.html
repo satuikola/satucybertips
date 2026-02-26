@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kirjoitus | SatuCyberTips</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="blog.css" />
+</head>
+
+<body>
+  <header class="top">
+    <div class="wrap top__inner">
+      <a class="brand" href="../index.html">SatuCyberTips</a>
+      <nav class="nav">
+        <a href="index.html">Kirjoitukset</a>
+        <a href="../index.html#projects">Projektit</a>
+        <a class="btn btn--ghost" href="../index.html#contact">Yhteys</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <a class="backLink" href="index.html">Takaisin kirjoituksiin</a>
+
+        <h1 id="title" class="postTitle"></h1>
+        <div class="postMeta">
+          <span id="date"></span>
+          <span class="dot">•</span>
+          <span id="category"></span>
+        </div>
+
+        <div id="tags" class="tagRow"></div>
+
+        <article id="content" class="postContent card"></article>
+      </div>
+    </section>
+  </main>
+
+  <script src="../posts.js"></script>
+  <script src="post.js"></script>
+</body>
+</html>
