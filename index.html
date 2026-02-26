@@ -265,5 +265,41 @@
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
+<script>
+  (function () {
+    const navLinks = Array.from(document.querySelectorAll('.nav a[href^="#"]'));
+    const sections = navLinks
+      .map(a => document.querySelector(a.getAttribute("href")))
+      .filter(Boolean);
+
+    function setActive(id) {
+      navLinks.forEach(a => a.classList.toggle("is-active", a.getAttribute("href") === "#" + id));
+    }
+
+    // Klikkaus: korosta heti
+    navLinks.forEach(a => {
+      a.addEventListener("click", () => {
+        const id = a.getAttribute("href").slice(1);
+        setActive(id);
+      });
+    });
+
+    // Scroll: korosta sen mukaan mikä osio on eniten näkyvissä
+    const obs = new IntersectionObserver((entries) => {
+      const visible = entries
+        .filter(e => e.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+      if (visible) setActive(visible.target.id);
+    }, { root: null, threshold: [0.35, 0.5, 0.65] });
+
+    sections.forEach(s => obs.observe(s));
+
+    // Alussa: jos URL:ssa on ankkuri, käytä sitä, muuten Minusta
+    const initial = (location.hash || "#about").slice(1);
+    setActive(initial);
+  })();
+</script>
+    
 </body>
 </html>
