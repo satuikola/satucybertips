@@ -150,7 +150,7 @@ const POSTS = [
     title: "MFA käytännössä",
     category: "Identiteetti",
     tags: ["mfa", "koodit", "tiliturva"],
-    excerpt: "MFA suojaa vain jos koodi pysyy sinulla, ei koskaan eteenpain."
+    excerpt: "MFA suojaa vain jos koodi pysyy sinulla, ei koskaan eteenpain.",
     content: `
 MFA on paras perussuojasi, mutta se toimii vain yhdellä ehdolla: koodi pysyy sinulla.
 
