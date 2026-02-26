@@ -1,3 +1,5 @@
+/* style.css */
+
 :root{
   --bg: #07081a;
   --bg2:#0b1030;
@@ -178,6 +180,7 @@ p{ margin:0 0 12px; line-height:1.65; color:var(--text); }
   gap:16px;
   margin-top: 14px;
 }
+
 .link{
   color: var(--cyan);
   font-weight:800;
@@ -231,7 +234,14 @@ p{ margin:0 0 12px; line-height:1.65; color:var(--text); }
   padding-top:18px;
 }
 
-/* responsive */
+/* Desktop tweak: Kirjoitukset-osio 2 saraketta */
+@media (min-width: 900px){
+  #posts .cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
 @media (max-width: 900px){
   .hero__inner{ grid-template-columns: 1fr; }
   .grid2{ grid-template-columns: 1fr; }
