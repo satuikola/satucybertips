@@ -1,0 +1,78 @@
+.filters{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin: 10px 0 18px;
+}
+
+.input, .select{
+  background: #0c1233cc;
+  border: 1px solid var(--stroke);
+  color: var(--text);
+  border-radius: 14px;
+  padding: 12px 14px;
+  font: inherit;
+  min-width: 260px;
+}
+
+.postGrid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.postCard__meta{
+  font-weight: 700;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.postCard__title{
+  margin: 0 0 8px;
+}
+
+.tagRow{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin: 10px 0 12px;
+}
+
+.tag{
+  border: 1px solid var(--stroke);
+  border-radius: 999px;
+  padding: 6px 10px;
+  color: var(--muted);
+  background: #0a0f2acc;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.backLink{
+  display:inline-block;
+  margin-bottom: 14px;
+  text-decoration:none;
+  color: var(--cyan);
+  font-weight: 800;
+}
+
+.postTitle{
+  font-family:"Oxanium", system-ui, sans-serif;
+  font-size: clamp(30px, 4vw, 44px);
+  margin: 0 0 8px;
+}
+
+.postMeta{
+  color: var(--muted);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.postContent{
+  padding: 18px;
+}
+
+@media (max-width: 900px){
+  .postGrid{ grid-template-columns: 1fr; }
+  .input, .select{ min-width: 100%; }
+}
