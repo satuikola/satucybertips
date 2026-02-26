@@ -257,7 +257,7 @@ p{ margin:0 0 12px; line-height:1.65; color:var(--text); }
   padding-top:18px;
 }
 
-.footer__inner span:last-child{ filter: saturate(0.95); }
+.footer__inner span:last-child{
   opacity: 0.75;
   font-weight: 600;
   letter-spacing: 0.02em;
