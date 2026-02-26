@@ -188,6 +188,21 @@ p{ margin:0 0 12px; line-height:1.65; color:var(--text); }
 }
 .link:hover{ text-decoration:underline; }
 
+.chip--link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  transition: transform 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+}
+
+.chip--link:hover{
+  transform: translateY(-1px);
+  border-color: #ffffff33;
+  color: var(--text);
+  box-shadow: 0 10px 26px #00000066;
+}
+
 .faq{ display:grid; gap:12px; margin-top:10px; }
 .faq__item{
   background: var(--card);
