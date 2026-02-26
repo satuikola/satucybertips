@@ -151,6 +151,26 @@ const POSTS = [
     category: "Identiteetti",
     tags: ["mfa", "koodit", "tiliturva"],
     excerpt: "MFA suojaa vain jos koodi pysyy sinulla, ei koskaan eteenpain."
+    content: `
+MFA on paras perussuojasi, mutta se toimii vain yhdellä ehdolla: koodi pysyy sinulla.
+
+Huijari ei yleensä yritä murtaa MFA:ta teknisesti. Se yrittää saada sinut itse antamaan koodin, hyväksymään pyynnön tai kirjautumaan feikkisivulle.
+
+Tee nämä kolme asetusta kuntoon:
+1) Suosi autentikaattoria tai passkeyta, jos mahdollista. Tekstiviesti on ok, mutta heikompi.
+2) Laita ilmoituksista näkyviin kirjautumisen tiedot, jos sovellus tukee sitä.
+3) Poista “muista tämä laite” siltä osin kuin se ei ole välttämätöntä tärkeissä palveluissa.
+
+Kun tulee MFA-koodi tai hyväksyntäpyyntö yllättäen:
+1) Älä hyväksy.
+2) Mene palveluun itse selaimen kautta tai sovelluksella, älä linkistä.
+3) Vaihda salasana ja tarkista kirjautumishistoria, jos epäily jäi.
+
+SOC-näkökulma:
+MFA-pommitus ja outo kirjautumissarja näkyy usein toistuvina epäonnistuneina kirjautumisina. Mitä nopeammin vaihdat salasanan ja katkaiset session, sitä vähemmän tapahtuu jatkoa.
+
+Nyrkkisääntö: jos et itse aloittanut kirjautumista, älä hyväksy mitään.
+`.trim()
    
   },
   {
