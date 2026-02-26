@@ -2,148 +2,171 @@
 <html lang="fi">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Satun Kybervinkit | Satu Cyber Tips</title>
-  <meta name="description" content="Satun Kybervinkit | Satu Cyber Tips. LinkedIn-julkaisujen arkisto ja kybervinkit arkeen." />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SatuCyberTips</title>
+  <meta name="description" content="SatuCyberTips: arjen kyberturvavinkit, SOC-näkökulma ja käytännön opit." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-<header class="wrap header">
-  <div class="brand">
-    <div class="logo">S</div>
-    <div>
-      <div class="brand-title">Satun Kybervinkit</div>
-      <div class="brand-sub">Satu Cyber Tips</div>
+  <header class="top">
+    <div class="wrap top__inner">
+      <a class="brand" href="#top">SatuCyberTips</a>
+      <nav class="nav">
+        <a href="#about">Minusta</a>
+        <a href="#projects">Projektit</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn--ghost" href="#contact">Yhteys</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
- <nav class="nav">
-  <a href="#vinkit">Vinkit</a>
-  <a href="#tammikuu">Tammikuu 2026</a>
-  <a href="#helmikuu">Helmikuu 2026</a>
-  <a href="#minusta">Minusta</a>
-  <a href="#yhteys">Yhteys</a>
-</nav>
-</header>
-
-  <main class="wrap">
+  <main id="top">
     <section class="hero">
-      <div>
-        <h1>Kybervinkit, jotka sopii tavalliseen arkeen.</h1>
-        <p class="lead">
-          Selkeästi ja käytännönläheisesti. Ei turhaa vaikeaa kieltä.
-          Mukana välillä myös SOC-tyylinen “mitä tästä pitäisi huomata” -kulma.
-        </p>
-
-        <div class="cta-row">
-          <a class="btn" href="#vinkit">Selaa vinkkejä</a>
-          <a class="btn ghost" href="#tammikuu">Katso tammikuu 2026</a>
-           <a class="btn ghost" href="#helmikuu">Katso helmikuu 2026</a>
-        </div>
-
-        <div class="chips">
-          <span class="chip">Huijaukset</span>
-          <span class="chip">Phishing</span>
-          <span class="chip">MFA</span>
-          <span class="chip">Wi-Fi</span>
-          <span class="chip">Social engineering</span>
-        </div>
-      </div>
-
-      <div class="hero-card">
-        <div class="hero-card-title">Mitä täällä on</div>
-        <p class="muted">
-          Tämä sivu toimii LinkedIn-julkaisujen arkistona ja “vinkkipankkina”.
-          Jokainen kortti linkkaa alkuperäiseen postaukseen.
-        </p>
-        <div class="rule">
-          <div class="rule-title">Nyrkkisääntö</div>
-          <div class="rule-text">Jos viesti kiirehtii sinua, pysähdy ja tarkista itse ilman linkkiä.</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="vinkit" class="section">
-      <div class="section-head">
-        <h2>Vinkit</h2>
-        <p class="muted">Hae, filtteröi tageilla ja avaa postaukset LinkedInissä.</p>
-      </div>
-
-      <div class="controls">
-        <input id="search" class="input" type="search" placeholder="Hae (esim. kiire, auktoriteetti, QR)" />
-        <div id="tagButtons" class="tag-row" aria-label="Tagifiltterit"></div>
-      </div>
-
-      <div id="posts" class="grid" aria-live="polite"></div>
-    </section>
-
-    <section id="tammikuu" class="section">
-      <div class="section-head">
-        <h2>Tammikuu 2026</h2>
-        <p class="muted">Kooste tammikuun julkaisuista.</p>
-      </div>
-      <div id="january" class="grid"></div>
-    </section>
-
-     <section id="helmikuu" class="section">
-      <div class="section-head">
-        <h2>Helmikuu 2026</h2>
-        <p class="muted">Kooste helmikuun julkaisuista.</p>
-      </div>
-      <div id="february" class="grid"></div>
-    </section>
-
-    <section id="minusta" class="section">
-      <div class="section-head">
-        <h2>Minusta</h2>
-      </div>
-
-      <div class="about">
-        <div class="card">
-          <h3>Satu</h3>
-          <p class="muted">
-            SOC-opiskelija ja käytännönläheinen kyberturva-sisällöntuottaja.
-            Taustalla vahva asiakaspalvelu ja tikettityö.
+      <div class="wrap hero__inner">
+        <div class="hero__copy">
+          <p class="kicker">Kyberturva arjessa, selkeästi</p>
+          <h1>SatuCyberTips</h1>
+          <p class="lead">
+            Konkreettisia vinkkejä, pieniä tarkistuslistoja ja välillä myös SOC-näkökulma.
+            Tavoite on yksinkertainen: tee oikea asia nopeasti, ennen kuin klikkaat.
           </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#projects">Katso projektit</a>
+            <a class="btn btn--ghost" href="#contact">Ota yhteyttä</a>
+          </div>
+
+          <div class="chips">
+            <span class="chip">#SOC</span>
+            <span class="chip">#ITtuki</span>
+            <span class="chip">#satucybertips</span>
+          </div>
+        </div>
+
+        <div class="hero__media" aria-hidden="true">
+          <div class="glass">
+            <!-- Vaihda tähän sun oma hero-kuva -->
+            <img src="assets/hero.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="wrap grid2">
+        <div>
+          <h2>Minusta</h2>
+          <p>
+            Olen Satu. Minulla on tausta asiakaspalvelusta ja opiskelen kyberturvallisuutta.
+            Tykkään tehdä vaikeasta ymmärrettävää ja antaa sellaisia ohjeita,
+            jotka pystyy toteuttamaan heti.
+          </p>
+          <p class="rule">
+            Nyrkkisääntö: jos pyyntö kiirehtii, pysähdy ja varmista kanava.
+          </p>
+        </div>
+
+        <div class="card card--accent">
+          <h3>Fokus</h3>
           <ul class="list">
-            <li>Arjen kyberturva ja huijausten tunnistaminen</li>
-            <li>IT-tuen perusvianmääritys ja päätelaitteet</li>
-            <li>Kevyt SOC-näkökulma: mitä tarkistan ensin</li>
+            <li>Huijausten tunnistaminen ja varmistuskeinot</li>
+            <li>Peruskovennus, MFA, salasanat, päivitykset</li>
+            <li>Lokiajattelu ja “mitä tästä näkyisi SOCissa”</li>
           </ul>
         </div>
+      </div>
+    </section>
 
-        <div class="card">
-          <h3>Miksi tein tämän</h3>
-          <p class="muted">
-            Haluan, että vinkit löytyy yhdestä paikasta ja niitä voi selata aiheittain.
-            Myöhemmin tänne voi lisätä myös projektit (Genially, GitHub, CV).
-          </p>
+    <section id="projects" class="section section--dark">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Projektit</h2>
+          <p>Valitse 3–6 juttua, joista olet ylpeä. Linkit GitHubiin, Genialyyn tai demoihin.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Cyber Escape Room</h3>
+            <p>Genially-pakohuone kyberturvan perusteista, huumorilla mutta asia edellä.</p>
+            <a class="link" href="#" target="_blank" rel="noreferrer">Avaa demo</a>
+          </article>
+
+          <article class="card">
+            <h3>Incident Response: First 24h</h3>
+            <p>Harjoituspolku, jossa opit triage-ajatusta ja perusaskelia.</p>
+            <a class="link" href="#" target="_blank" rel="noreferrer">Katso lisää</a>
+          </article>
+
+          <article class="card">
+            <h3>TryHackMe automaatio</h3>
+            <p>GitHub Actions, joka päivittää badgeja automaattisesti.</p>
+            <a class="link" href="#" target="_blank" rel="noreferrer">Repo</a>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="yhteys" class="section">
-      <div class="section-head">
-        <h2>Yhteys</h2>
-        <p class="muted"></p>
-      </div>
+    <section id="faq" class="section">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>FAQ</h2>
+          <p>Lyhyet vastaukset. Näihin on helppo palata myös LinkedIn-postauksissa.</p>
+        </div>
 
-      <div class="card">
-        <div class="links">
-          <a class="link" href="https://www.linkedin.com/in/satu-ikola" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="link" href="https://github.com/satuikola" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="link" href="mailto:satu.ikola@gmail.com">Sähköposti</a>
+        <div class="faq">
+          <details class="faq__item">
+            <summary>Miksi “pysähdy ja varmista” on tärkein sääntö?</summary>
+            <p>Huijaukset voittaa ajalla. Kun hidastat 10 sekuntia, saat mahdollisuuden huomata ristiriidan.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>Mitä tarkoittaa SOC-näkökulma?</summary>
+            <p>Mietitään, miltä tilanne näyttäisi lokeissa ja mitä kysymyksiä triage tekisi ensin.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>Mistä aloitan, jos haluan parantaa tietoturvaa heti?</summary>
+            <p>MFA, päivitykset, varmuuskopio ja salasanojen siivous. Neljän kärki, jolla pääsee pitkälle.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--contact">
+      <div class="wrap contact">
+        <div>
+          <h2>Ota yhteyttä</h2>
+          <p>Lisää tähän sähköposti ja linkit. Voit pitää tämän lyhyenä ja selkeänä.</p>
+          <div class="contact__rows">
+            <div><span class="muted">Email</span><br><a class="link" href="mailto:sinun@email.fi">sinun@email.fi</a></div>
+            <div><span class="muted">LinkedIn</span><br><a class="link" href="#" target="_blank" rel="noreferrer">Profiili</a></div>
+            <div><span class="muted">GitHub</span><br><a class="link" href="#" target="_blank" rel="noreferrer">Repo</a></div>
+          </div>
+        </div>
+
+        <div class="card card--accent">
+          <h3>Nopea CTA</h3>
+          <p>0 / 1 / 2: montako näistä on kunnossa? MFA, päivitykset, backup.</p>
+          <p class="small muted">Tämä toimii hauskana “signature” juttuna.</p>
         </div>
       </div>
     </section>
 
     <footer class="footer">
-      <span class="muted">© <span id="year"></span> Satun Kybervinkit</span>
+      <div class="wrap footer__inner">
+        <span class="muted">© <span id="y"></span> SatuCyberTips</span>
+        <span class="muted">Neon, mutta siisti</span>
+      </div>
     </footer>
   </main>
 
-  <script src="posts.js"></script>
-  <script src="app.js"></script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-
