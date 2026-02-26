@@ -10,22 +10,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <meta property="og:title" content="SatuCyberTips" />
-<meta property="og:description" content="SatuCyberTips tarjoaa arjen kyberturvavinkkejä selkeästi. Konkreettiset tarkistuslistat, huijausten tunnistus ja varmistuskeinot, välillä myös SOC-näkökulma." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://satuikola.github.io/satucybertips/" />
-<meta property="og:image" content="https://satuikola.github.io/satucybertips/assets/hero.png" />
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="SatuCyberTips" />
-<meta name="twitter:description" content="SatuCyberTips tarjoaa arjen kyberturvavinkkejä selkeästi. Konkreettiset tarkistuslistat, huijausten tunnistus ja varmistuskeinot, välillä myös SOC-näkökulma." />
-<meta name="twitter:image" content="https://satuikola.github.io/satucybertips/assets/hero.png" />
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <meta property="og:title" content="SatuCyberTips" />
+  <meta property="og:description" content="SatuCyberTips tarjoaa arjen kyberturvavinkkejä selkeästi. Konkreettiset tarkistuslistat, huijausten tunnistus ja varmistuskeinot, välillä myös SOC-näkökulma." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://satuikola.github.io/satucybertips/" />
+  <meta property="og:image" content="https://satuikola.github.io/satucybertips/assets/hero.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SatuCyberTips" />
+  <meta name="twitter:description" content="SatuCyberTips tarjoaa arjen kyberturvavinkkejä selkeästi. Konkreettiset tarkistuslistat, huijausten tunnistus ja varmistuskeinot, välillä myös SOC-näkökulma." />
+  <meta name="twitter:image" content="https://satuikola.github.io/satucybertips/assets/hero.png" />
+
   <meta name="author" content="Satu Ikola" />
-<meta property="article:author" content="https://www.linkedin.com/in/satu-ikola" />
-<meta property="og:site_name" content="SatuCyberTips" />
-<link rel="canonical" href="https://satuikola.github.io/satucybertips/" />
+  <meta property="article:author" content="https://www.linkedin.com/in/satu-ikola" />
+  <meta property="og:site_name" content="SatuCyberTips" />
+  <link rel="canonical" href="https://satuikola.github.io/satucybertips/" />
   <meta property="article:modified_time" content="2026-02-26" />
 </head>
 
@@ -36,7 +39,7 @@
       <nav class="nav">
         <a href="#about">Minusta</a>
         <a href="#projects">Projektit</a>
-        <a href="blog/">Kirjoitukset</a>
+        <a href="#posts">Kirjoitukset</a>
         <a href="#faq">FAQ</a>
         <a class="btn btn--ghost" href="#contact">Yhteys</a>
       </nav>
@@ -67,7 +70,6 @@
 
         <div class="hero__media" aria-hidden="true">
           <div class="glass">
-            <!-- Vaihda tähän sun oma hero-kuva -->
             <img src="assets/hero.png" alt="" />
           </div>
         </div>
@@ -105,134 +107,136 @@
           <h2>Projektit</h2>
           <p>Tässä on muutama mun lempiprojekti. Jos haluat, käy testaamassa demo ja nappaa mukaan yksi käytännön vinkki.</p>
         </div>
-<div class="cards">
-  <article class="card">
-    <h3>Cyber Escape Room</h3>
-    <p>
-      Genially-pakohuone, joka opettaa kyberturvan perusasiat käytännön tilanteiden kautta.
-      Näyttää, miten teen ohjeista selkeitä ja pelillistän oppimisen ilman että asia vesittyy.
-    </p>
-    <a class="link" href="https://view.genially.com/67f9136ff8ee7b4e52096283/interactive-content-cybersecurity-room" target="_blank" rel="noreferrer">Avaa demo</a>
-  </article>
 
-  <article class="card">
-    <h3>Incident Response: First 24h</h3>
-    <p>
-      Harjoituspolku, jossa treenaan triage-ajattelua ja ensimmäisiä toimenpiteitä.
-      Fokus on siinä, miten rajaan tilanteen nopeasti: mitä tapahtui, kenelle ja mikä muuttui.
-      Tämä projekti on vielä suunnitteluvaihessa.
-    </p>
-    <a class="link" href="https://github.com/satuikola" target="_blank" rel="noreferrer">Katso lisää</a>
-  </article>
+        <div class="cards">
+          <article class="card">
+            <h3>Cyber Escape Room</h3>
+            <p>
+              Genially-pakohuone, joka opettaa kyberturvan perusasiat käytännön tilanteiden kautta.
+              Näyttää, miten teen ohjeista selkeitä ja pelillistän oppimisen ilman että asia vesittyy.
+            </p>
+            <a class="link" href="https://view.genially.com/67f9136ff8ee7b4e52096283/interactive-content-cybersecurity-room" target="_blank" rel="noreferrer">Avaa demo</a>
+          </article>
 
-  <article class="card">
-    <h3>TryHackMe automaatio</h3>
-    <p>
-      GitHub Actions -automaatio, joka pitää tekemisen näkyvänä ja päivittää badgeja.
-      Näyttää, että osaan käyttää versionhallintaa ja automatisoida pientä, hyödyllistä toistoa.
-    </p>
-    <a class="link" href="https://github.com/satuikola" target="_blank" rel="noreferrer">Repo</a>
-  </article>
-</div>
-    
+          <article class="card">
+            <h3>Incident Response: First 24h</h3>
+            <p>
+              Harjoituspolku, jossa treenaan triage-ajattelua ja ensimmäisiä toimenpiteitä.
+              Fokus on siinä, miten rajaan tilanteen nopeasti: mitä tapahtui, kenelle ja mikä muuttui.
+              Tämä projekti on vielä suunnitteluvaiheessa.
+            </p>
+            <a class="link" href="https://github.com/satuikola" target="_blank" rel="noreferrer">Katso lisää</a>
+          </article>
+
+          <article class="card">
+            <h3>TryHackMe automaatio</h3>
+            <p>
+              GitHub Actions -automaatio, joka pitää tekemisen näkyvänä ja päivittää badgeja.
+              Näyttää, että osaan käyttää versionhallintaa ja automatisoida pientä, hyödyllistä toistoa.
+            </p>
+            <a class="link" href="https://github.com/satuikola" target="_blank" rel="noreferrer">Repo</a>
+          </article>
+        </div>
+      </div>
     </section>
-<section id="posts" class="section">
-  <div class="wrap">
-    <div class="section__head">
-      <h2>Kirjoitukset</h2>
-      <p>
-        Aiheittain koottuja tekstejä arjen kyberturvaan. Lyhyet tarkistuslistat, varmistusrutiinit ja välillä myös SOC-näkökulma.
-        Nämä voi lukea ilman kirjautumista.
-      </p>
-      <div class="chips chips--links">
-  <a class="chip chip--link" href="blog/?view=all&cat=Identiteetti">Identiteetti</a>
-  <a class="chip chip--link" href="blog/?view=all&cat=Huijaukset">Huijaukset</a>
-  <a class="chip chip--link" href="blog/?view=all&cat=Social%20engineering">Sosiaalinen manipulointi</a>
-  <a class="chip chip--link" href="blog/?view=all&cat=Varmuuskopiot">Varmuuskopiot</a>
-  <a class="chip chip--link" href="blog/?view=all&cat=Paivitysrutiini">Päivitysrutiini</a>
-  <a class="chip chip--link" href="blog/?view=all&cat=Kotiverkko">Kotiverkko</a>
-</div>
-    </div>
 
-    <div class="cards">
-      <article class="card">
-        <h3>Identiteetti ja MFA</h3>
-        <p>Tiliturvan perusvyöt: sähköposti, MFA, salasanat ja “mitä teen jos pyyntö tulee yllättäen”.</p>
-        <a class="link" href="blog/?view=all&cat=Identiteetti">Avaa aiheen kirjoitukset</a>
-      </article>
+    <section id="posts" class="section">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Kirjoitukset</h2>
+          <p>
+            Aiheittain koottuja tekstejä arjen kyberturvaan. Lyhyet tarkistuslistat, varmistusrutiinit ja välillä myös SOC-näkökulma.
+            Nämä voi lukea ilman kirjautumista.
+          </p>
 
-      <article class="card">
-        <h3>Huijaukset ja manipulointi</h3>
-        <p>Kiire, auktoriteetti ja tunne. Pysähdy, vaihda kanavaa ja varmista ennen kuin toimit.</p>
-        <a class="link" href="blog/?view=all&cat=Huijaukset">Avaa aiheen kirjoitukset</a>
-      </article>
+          <div class="chips chips--links">
+            <a class="chip chip--link" href="blog/?view=all&cat=Identiteetti">Identiteetti</a>
+            <a class="chip chip--link" href="blog/?view=all&cat=Huijaukset">Huijaukset</a>
+            <a class="chip chip--link" href="blog/?view=all&cat=Social%20engineering">Sosiaalinen manipulointi</a>
+            <a class="chip chip--link" href="blog/?view=all&cat=Varmuuskopiot">Varmuuskopiot</a>
+            <a class="chip chip--link" href="blog/?view=all&cat=Paivitysrutiini">Päivitysrutiini</a>
+            <a class="chip chip--link" href="blog/?view=all&cat=Kotiverkko">Kotiverkko</a>
+          </div>
+        </div>
 
-      <article class="card">
-        <h3>Varmuuskopiot ja palautus</h3>
-        <p>3-2-1, offline ja palautus. Synkronointi ei ole varmuuskopio.</p>
-        <a class="link" href="blog/?view=all&cat=Varmuuskopiot">Avaa aiheen kirjoitukset</a>
-      </article>
-      
-      <article class="card">
-        <h3>Päivitysrutiini</h3>
-        <p>Pieni viikkorutiini: puhelin, selain ja kone ajan tasalle ilman säätöä. 15 minuuttia riittää yllättävän pitkälle.</p>
-        <a class="link" href="blog/?view=all&cat=Paivitysrutiini">Avaa aiheen kirjoitukset</a>
-      </article>
+        <div class="cards">
+          <article class="card">
+            <h3>Identiteetti ja MFA</h3>
+            <p>Tiliturvan perusvyöt: sähköposti, MFA, salasanat ja “mitä teen jos pyyntö tulee yllättäen”.</p>
+            <a class="link" href="blog/?view=all&cat=Identiteetti">Avaa aiheen kirjoitukset</a>
+          </article>
 
-      <article class="card">
-        <h3>Kotiverkko</h3>
-        <p>Reititin ja Wi-Fi kuntoon: nimi, salaus, päivitykset ja auto-join pois. Pienillä asetuksilla iso vaikutus.</p>
-        <a class="link" href="blog/?view=all&cat=Kotiverkko">Avaa aiheen kirjoitukset</a>
-      </article>
-      
-    </div>
-    
+          <article class="card">
+            <h3>Huijaukset ja manipulointi</h3>
+            <p>Kiire, auktoriteetti ja tunne. Pysähdy, vaihda kanavaa ja varmista ennen kuin toimit.</p>
+            <a class="link" href="blog/?view=all&cat=Huijaukset">Avaa aiheen kirjoitukset</a>
+          </article>
 
-    <div style="margin-top:12px;">
-      <a class="btn btn--ghost" href="blog/">Näytä kaikki kategoriat</a>
-    </div>
-  </div>
-</section>
-<section id="faq" class="section">
-  <div class="wrap">
-    <div class="section__head">
-      <h2>FAQ</h2>
-      <p>Nopea tarkistuslista arjen tilanteisiin. Avaa kysymys, tee yksi asia, ja jatka päivää turvallisemmin.</p>
-    </div>
+          <article class="card">
+            <h3>Varmuuskopiot ja palautus</h3>
+            <p>3-2-1, offline ja palautus. Synkronointi ei ole varmuuskopio.</p>
+            <a class="link" href="blog/?view=all&cat=Varmuuskopiot">Avaa aiheen kirjoitukset</a>
+          </article>
 
-    <div class="faq">
-      <details class="faq__item">
-        <summary>Miksi “pysähdy ja varmista” on tärkein sääntö?</summary>
-        <p>
-          Huijaukset voittaa ajalla ja kiireellä. Kun pysähdyt 10 sekunniksi, ehdit huomata ristiriidan.
-          Varmista aina kanava: soita itse takaisin tallennettuun numeroon tai vaihda viestikanavaa.
-          Jos pyyntö koskee rahaa, tunnuksia tai “älä kerro kenellekään”, se on aina varmistuskeissi.
-        </p>
-        <p class="rule">Nyrkkisääntö: jos viesti kiirehtii, pysähdy ja vaihda kanavaa.</p>
-      </details>
+          <article class="card">
+            <h3>Päivitysrutiini</h3>
+            <p>Pieni viikkorutiini: puhelin, selain ja kone ajan tasalle ilman säätöä. 15 minuuttia riittää yllättävän pitkälle.</p>
+            <a class="link" href="blog/?view=all&cat=Paivitysrutiini">Avaa aiheen kirjoitukset</a>
+          </article>
 
-      <details class="faq__item">
-        <summary>Mitä tarkoittaa SOC-näkökulma?</summary>
-        <p>
-          Ajattelen hetken kuin tutkija: mitä tapahtui, milloin alkoi ja koskeeko tämä vain yhtä vai useampaa käyttäjää.
-          Sen sijaan että korjaan sokkona, kerään ensin faktat: virheilmoitus, laite, kirjautumistapa, mahdolliset muutokset.
-          Tämä helpottaa triagea ja nopeuttaa ratkaisua, koska ongelma rajautuu heti oikeaan suuntaan.
-        </p>
-        <p class="rule">Nyrkkisääntö: kerää tiedot ensin, korjaa vasta sitten.</p>
-      </details>
+          <article class="card">
+            <h3>Kotiverkko</h3>
+            <p>Reititin ja Wi-Fi kuntoon: nimi, salaus, päivitykset ja auto-join pois. Pienillä asetuksilla iso vaikutus.</p>
+            <a class="link" href="blog/?view=all&cat=Kotiverkko">Avaa aiheen kirjoitukset</a>
+          </article>
+        </div>
 
-      <details class="faq__item">
-        <summary>Mistä aloitan, jos haluan parantaa tietoturvaa heti?</summary>
-        <p>
-          Aloita kolmesta perusasiasta: MFA kaikkiin tärkeisiin tileihin, päivitykset automaattisiksi ja varmuuskopio.
-          Salasanat kuntoon salasanamanagerilla ja vaihda tärkeimmät ensin (sähköposti, pankki, some).
-          Näillä saat isoimman riskin alas nopeasti ilman että tarvitsee säätää tuntikausia.
-        </p>
-        <p class="rule">Nyrkkisääntö: MFA + päivitykset + varmuuskopio on perussuoja.</p>
-      </details>
-    </div>
-  </div>
-</section>   
+        <div style="margin-top:12px; display:flex; gap:12px; flex-wrap:wrap;">
+          <a class="btn btn--ghost" href="blog/">Näytä kaikki kategoriat</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>FAQ</h2>
+          <p>Nopea tarkistuslista arjen tilanteisiin. Avaa kysymys, tee yksi asia, ja jatka päivää turvallisemmin.</p>
+        </div>
+
+        <div class="faq">
+          <details class="faq__item">
+            <summary>Miksi “pysähdy ja varmista” on tärkein sääntö?</summary>
+            <p>
+              Huijaukset voittaa ajalla ja kiireellä. Kun pysähdyt 10 sekunniksi, ehdit huomata ristiriidan.
+              Varmista aina kanava: soita itse takaisin tallennettuun numeroon tai vaihda viestikanavaa.
+              Jos pyyntö koskee rahaa, tunnuksia tai “älä kerro kenellekään”, se on aina varmistuskeissi.
+            </p>
+            <p class="rule">Nyrkkisääntö: jos viesti kiirehtii, pysähdy ja vaihda kanavaa.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>Mitä tarkoittaa SOC-näkökulma?</summary>
+            <p>
+              Ajattelen hetken kuin tutkija: mitä tapahtui, milloin alkoi ja koskeeko tämä vain yhtä vai useampaa käyttäjää.
+              Sen sijaan että korjaan sokkona, kerään ensin faktat: virheilmoitus, laite, kirjautumistapa, mahdolliset muutokset.
+              Tämä helpottaa triagea ja nopeuttaa ratkaisua, koska ongelma rajautuu heti oikeaan suuntaan.
+            </p>
+            <p class="rule">Nyrkkisääntö: kerää tiedot ensin, korjaa vasta sitten.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>Mistä aloitan, jos haluan parantaa tietoturvaa heti?</summary>
+            <p>
+              Aloita kolmesta perusasiasta: MFA kaikkiin tärkeisiin tileihin, päivitykset automaattisiksi ja varmuuskopio.
+              Salasanat kuntoon salasanamanagerilla ja vaihda tärkeimmät ensin (sähköposti, pankki, some).
+              Näillä saat isoimman riskin alas nopeasti ilman että tarvitsee säätää tuntikausia.
+            </p>
+            <p class="rule">Nyrkkisääntö: MFA + päivitykset + varmuuskopio on perussuoja.</p>
+          </details>
+        </div>
+      </div>
+    </section>
 
     <section id="contact" class="section section--contact">
       <div class="wrap contact">
@@ -265,41 +269,46 @@
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
-<script>
-  (function () {
-    const navLinks = Array.from(document.querySelectorAll('.nav a[href^="#"]'));
-    const sections = navLinks
-      .map(a => document.querySelector(a.getAttribute("href")))
-      .filter(Boolean);
 
-    function setActive(id) {
-      navLinks.forEach(a => a.classList.toggle("is-active", a.getAttribute("href") === "#" + id));
-    }
+  <script>
+    (function () {
+      const navLinks = Array.from(document.querySelectorAll('.nav a[href^="#"]'));
 
-    // Klikkaus: korosta heti
-    navLinks.forEach(a => {
-      a.addEventListener("click", () => {
-        const id = a.getAttribute("href").slice(1);
-        setActive(id);
+      const sections = navLinks
+        .map(a => document.querySelector(a.getAttribute("href")))
+        .filter(Boolean);
+
+      function clearActive() {
+        navLinks.forEach(a => a.classList.remove("is-active"));
+      }
+
+      function setActive(id) {
+        navLinks.forEach(a => a.classList.toggle("is-active", a.getAttribute("href") === "#" + id));
+      }
+
+      navLinks.forEach(a => {
+        a.addEventListener("click", () => {
+          const id = a.getAttribute("href").slice(1);
+          setActive(id);
+        });
       });
-    });
 
-    // Scroll: korosta sen mukaan mikä osio on eniten näkyvissä
-    const obs = new IntersectionObserver((entries) => {
-      const visible = entries
-        .filter(e => e.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      const obs = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter(e => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
 
-      if (visible) setActive(visible.target.id);
-    }, { root: null, threshold: [0.35, 0.5, 0.65] });
+        if (visible) setActive(visible.target.id);
+      }, { threshold: [0.2, 0.35, 0.5, 0.65] });
 
-    sections.forEach(s => obs.observe(s));
+      sections.forEach(s => obs.observe(s));
 
-    // Alussa: jos URL:ssa on ankkuri, käytä sitä, muuten Minusta
-    const initial = (location.hash || "#about").slice(1);
-    setActive(initial);
-  })();
-</script>
-    
+      if (location.hash) {
+        setActive(location.hash.slice(1));
+      } else {
+        clearActive();
+      }
+    })();
+  </script>
 </body>
 </html>
